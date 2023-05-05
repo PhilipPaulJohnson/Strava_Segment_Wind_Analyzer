@@ -32,18 +32,18 @@ INSTALL:
 
 4. create pgadmin containers with docker-compose.yml (docker compose up -d)
 
-5. create server in pgadmin
+5. create server in PG Admin
 
 6. (docker exec -i pg_container psql -c 'CREATE DATABASE efforts;')
 
 7. check: __init__.py = (SQLALCHEMY_DATABASE_URI='postgresql://postgres@localhost:5432/efforts',) OR your db.uri
 
-8. inside segment_analyzer folder: flask db migrate THEN flask db upgrade
+8. inside segment_analyzer folder: (flask db migrate) THEN (flask db upgrade)
 
 
 AUTHORIZATION:
 
-1. follow instructions to obtain Strava API authorization and subsequent authorization code. https://developers.strava.com/docs/getting-started/ 
+1. follow instructions to obtain Strava API authorization and subsequent authorization code. developers.strava.com/docs/getting-started/ 
 
 2. insert authorization code into the nu_auth.py variable auth_code = '' and run. copy refresh and access tokens into the refresh_token & access_token variables (lines 42 & 44)
 
