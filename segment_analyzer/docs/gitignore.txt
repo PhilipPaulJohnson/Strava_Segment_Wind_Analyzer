@@ -1,3 +1,5 @@
+*generate & insert .gitignore in flask folder
+
 instance
 **/__pycache__
 __pycache__/
