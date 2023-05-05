@@ -1,7 +1,5 @@
 # Strava_Segment_Wind_Analyzer
 
-APPLICATION:
-
 OVERVIEW: This application will allow a cyclist publicly tracked by Strava to select any Strava segment effort for analysis/determination of optimal wind speed & direction of that segment
 
 HOW IT WORKS: Using the Strava and Timeline Weather API, the application administrator will be able to view and select an athlete’s Strava segment(s) for analysis and insertion into the SQL database. When the database is sufficiently populated, the admin may use PG Admin to query the SQL database using new or preset scripts. The data may also be further analyzed within the app using new or previously imported Python data analysis modules or scripts
