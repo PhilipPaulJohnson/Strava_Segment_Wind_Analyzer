@@ -1,3 +1,5 @@
+# Strava_Segment_Wind_Analyzer
+
 APPLICATION:
 
 OVERVIEW: This application will allow a cyclist publicly tracked by Strava to select any Strava segment effort for analysis/determination of optimal wind speed & direction of that segment
