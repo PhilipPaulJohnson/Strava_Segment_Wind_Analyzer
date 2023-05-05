@@ -6,6 +6,8 @@ OVERVIEW: This application will allow a cyclist publicly tracked by Strava to se
 
 HOW IT WORKS: Using the Strava and Timeline Weather API, the application administrator will be able to view and select an athlete’s Strava segment(s) for analysis and insertion into the SQL database. When the database is sufficiently populated, the admin may use PG Admin to query the SQL database using new or preset scripts. The data may also be further analyzed within the app using new or previously imported Python data analysis modules or scripts
 
+WHERE IT'S GOING: This app was developed to mainly showcase the simultaneous use/connectivity of the technologies (listed below). While very over-engineered for it's stated purpose, I wanted to generate a portfolio project in Flask since I will be using Django primarily. The Python code can easily be improved with catch-alls, procedures wrapped into functions, OOP... in the next version
+
 
 TECHNOLOGIES:
 
