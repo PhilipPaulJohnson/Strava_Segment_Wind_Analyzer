@@ -10,6 +10,10 @@ from src import create_app
 
 from nu_auth import access_token
 
+import warnings
+warnings.filterwarnings("ignore", category=DeprecationWarning) 
+
+
 bearer = access_token
 
 def date_conv(text):
