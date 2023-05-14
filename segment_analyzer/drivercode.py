@@ -32,7 +32,7 @@ def meters_conv(inte):
 segment_id = 18672981
 start_date = '2023-01-01'
 end_date = '2023-01-31'
-per_page = 40 #strava may reject request if too large
+per_page = 3 #strava may reject request if too large
 
 # Timeline Weather API variables
 apikey = "key=JAEMLVA9PJZH3Z4XFSL7HM5Y7"
