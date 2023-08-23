@@ -1,27 +1,29 @@
-# Strava_Segment_Wind_Analyzer
+# Strava Segment Wind Analyzer
+
+![broad_db_query_example](https://github.com/PhilipPaulJohnson/Strava_Segment_Wind_Analyzer/assets/114535785/3e9bab3c-74e0-4662-a677-5de58dc0d6c4)
 
 *see doc-scrnshts folder
 
 OVERVIEW: This application will allow a cyclist publicly tracked by Strava to select any Strava segment effort for analysis/determination of optimal wind speed & direction of that segment
 
-HOW IT WORKS: Using the Strava and Timeline Weather API, the application administrator will be able to view and select an athlete’s Strava segment(s) for analysis and insertion into the SQL database. When the database is sufficiently populated, the admin may use PG Admin to query the SQL database using new or preset scripts. The data may also be further analyzed within the app using new or previously imported Python data analysis modules or scripts. The main code can be found in segment_analyzer/drivercode.py
+HOW IT WORKS: Using the Strava and Timeline Weather API, the application administrator will be able to view and select an athlete’s Strava segment(s) for analysis and insertion into the SQL database. When the database is sufficiently populated, the admin may use PG Admin to query the SQL database using new or preset scripts
 
-WHERE IT'S GOING: This app was developed to mainly showcase the simultaneous use of the technologies (listed below). While over-engineered for it's stated purpose, I wanted to generate a portfolio project in Flask using more complex connectivity. The app can be improved by packaging for easy install and the Python code improved with catch-alls, procedures wrapped into functions, OOP... in the next version
+WHERE IT'S GOING: This app can be improved with catch-alls, procedures wrapped into functions, OOP... in the next version
 
 
 TECHNOLOGIES:
 
-Python: base app / Psycopg database adapter 
+Python: base app
 
 Flask: framework
 
 SQL Alchemy: tables & insertions prepared in Object Relational Model format
 
-Alembic: database migrations will allow for rollbacks
+Alembic: database migrations
 
 Docker: Postgres server & database containerization
 
-PG Admin: Postgres database administration & development
+PG Admin: Postgres database administration
 
 
 INSTALL:
@@ -47,7 +49,7 @@ AUTHORIZATION:
 
 1. follow instructions to obtain Strava API authorization and subsequent authorization code. developers.strava.com/docs/getting-started/ 
 
-2. insert authorization code into the nu_auth.py variable auth_code = '' and run. copy refresh and access tokens into the refresh_token & access_token variables (lines 42 & 44)
+2. insert client ID, client secret & authorization code into nu_auth.py and run. copy refresh and access tokens into the refresh_token & access_token variables (lines 42 & 44)
 
 3. insert Strava API variables into drivercode.py (segment_id, start_date, end_date, per_page)
 
